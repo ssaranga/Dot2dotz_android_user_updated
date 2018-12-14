@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/content_height_width"
+            android:layout_height="@dimen/content_height_width"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@drawable/back_drawable"
+            android:tint="@color/text_color_white" />
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:text="@string/track_order"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/source_txt"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center"
+        android:background="#eee"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp">
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/source_location"
+            android:textColor="@color/black_text_color" />
+
+        <com.dot2dotz.app.Utils.MyTextView
+            android:id="@+id/sourceAddressText"
+            android:ellipsize="end"
+            android:paddingEnd="@dimen/_5sdp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        />
+
+</LinearLayout>

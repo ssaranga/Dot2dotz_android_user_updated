@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.dot2dotz.app.Utils.MyEditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_weight="0.13"
+        android:background="@drawable/border_stroke"
+        android:gravity="start"
+        android:hint=""
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textSize="@dimen/button_margin" />
+
+</LinearLayout>

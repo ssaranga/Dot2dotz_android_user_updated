@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dot2Dotz</string>
+    <string name="sample_mail_id" translatable="false">नाम@examplecom</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="label_language">भाषा</string>
+
+    <string name="WEB_CLIENT_KEY">91672578681-krdjn3t7qh3c73skqp6d7ide8ba56dec.apps.googleusercontent.com</string>
+    <string name="Outh_Client">"91672578681-flrvu48ulb7tlicov0m7l7e30vf73rtu.apps.googleusercontent.com</string>
+    <!--Nav items-->
+    <string name="label_dummy">Dot2Dotz</string>
+    <string name="action_payment">भुगतान</string>
+    <string name="action_trips">आपकी डिलीवरीज</string>
+    <string name="action_coupon">कूपन</string>
+    <string name="action_wallet">वॉलेट</string>
+    <string name="action_help">सहायता</string>
+    <string name="action_share">शेयर</string>
+    <string name="action_logout">लॉगआउट</string>
+    <string name="phone_validation">कृपया 10 अंकों का मोबाइल नंबर दर्ज करें</string>
+    <string name="signin_or">(या)</string>
+
+    <!--Activity Email -->
+    <!-- <string name="whats_your_mail_address">आपका ईमेल पता क्या है?</string>-->
+    <string name="whats_your_phone_number">आपका मोबाइल नंबर क्या है?</string>
+
+    <!--Activity Password -->
+    <string name="welcome_back">वापस स्वागत है, जारी रखने के लिए साइन इन करें</string>
+    <string name="enter_your_password">अपना पासवर्ड डालें</string>
+    <string name="i_forgot_my_password">मैं अपना पासवर्ड भूल गया</string>
+    <string name="i_need_to_create_an_account">मुझे एक खाता बनाना है</string>
+    <string name="apply">लागू करें</string>
+
+    <!--Activity Register-->
+    <string name="email">ईमेल</string>
+    <string name="name">नाम</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="password">पासवर्ड</string>
+    <string name="first_name">पहला नाम</string>
+    <string name="last_name">अंतिम नाम</string>
+    <string name="mobile_no" translatable="false">9876543210</string>
+    <string name="password_txt" translatable="false">******</string>
+
+    <!-- Activity ForgetPassword -->
+    <!--<string name="recover_password">वसूली के लिए अपनी मेल आईडी दर्ज करें</string>-->
+    <string name="recover_password">वसूली के लिए अपना फोन नंबर दर्ज करेंं</string>
+
+    <!-- Coupon Fragment-->
+    <string name="enter_the_coupon">कूपन कोड डालें</string>
+    <string name="add_coupon">कूपन जोड़ें</string>
+    <string name="add_coupon_code">कूपन कोड जोड़ें</string>
+
+    <!--Welcome screen-->
+    <string name="sign_in">दाखिल करना</string>
+    <string name="signup">साइन अप करें</string>
+
+    <string name="fresh">स्वागत हे</string>
+    <string name="search">अनुसूची</string>
+    <string name="bookmark">ड्राइवर</string>
+
+    <string name="fresh_description">आपको परिवहन करने के लिए Dot2Dotz सेवाएं पेश करना जहां आपको जाना है। हमारी सवारी पर बहुत कुछ हो सकता है।.</string>
+    <string name="search_description">जब भी और जहां भी आप चाहें सवारी करें. आपको चुनने के लिए योजना और अनुसूची.</string>
+    <string name="bookmark_description">हमारे पास सबसे दोस्ताना ड्राइवर हैं जो आपके लिए अतिरिक्त मील जाएंगे.</string>
+
+    <!-- Edit Activity-->
+    <string name="edit_profile">खाता संपादित करें</string>
+    <string name="change_password">पासवर्ड बदलना चाहते हैं?</string>
+    <string name="save">सेव</string>
+    <string name="update_success">प्रोफ़ाइल अपडेट</string>
+
+    <!-- Home Fragment-->
+    <string name="where_to_go">पिकअप और छोड़ने के स्थानों को चुनें </string>
+    <string name="extend_trip">डिलिवरी ट्रिप बढ़ाएं?</string>
+    <string name="selected_option">अर्थव्यवस्था</string>
+    <string name="selected_payment_mode">नकद</string>
+    <string name="selected_payment_mode_payu">PayU Money</string>
+    <string name="select_service">सेवा का चयन करें</string>
+    <string name="change">परिवर्तन</string>
+    <string name="request_xuber">अनुरोध पिकअप</string>
+    <string name="sharing_text">यात्रा विवरण</string>
+    <string name="screenshot_take_failed">स्क्रीनशॉट लेने में विफल!!</string>
+
+    <!--Schedule Layout -->
+    <string name="schedule">एक सेवा अनुसूची </string>
+    <string name="change_date">परिवर्तन</string>
+    <string name="sample_date">एक तिथि चुनें</string>
+    <string name="sample_time">एक समय चुनें</string>
+    <string name="next">अनुसूची अनुरोध</string>
+    <string name="different_time">आप पिछले समय में शेड्यूल नहीं कर सकते हैं, कृपया अलग-अलग समय चुनें</string>
+    <string name="choose_date_time">अनुसूची के लिए दिनांक और समय चुनें</string>
+    <string name="upcoming_trips">आगामी यात्राएं</string>
+    <string name="past_trips">पिछली यात्राएं</string>
+
+    <!--Service List Item -->
+    <string name="service_list_item" translatable="false">जैगुआर</string>
+    <string name="no_service">सेवा इस स्थान पर उपलब्ध नहीं है।</string>
+    <string name="no_route">कोई रास्ता नहीं है, अलग गंतव्य का चयन करें</string>
+    <string name="choose_payment">भुगतान का तरीका चुनें</string>
+
+    <!--Approximate -->
+    <string name="approximate">अनुमानित किराया</string>
+    <string name="eta_time">ईटीए</string>
+    <string name="sample_rate" translatable="false">$1234</string>
+    <string name="include_all">अन्य सभी शुल्कों सहित</string>
+
+    <!-- Confirm your pickup -->
+    <string name="confirm_your_pickup">अपने पिकअप की पुष्टि करें</string>
+    <string name="confirm">पिकअप की पुष्टि करें</string>
+    <string name="close">बंद</string>
+    <string name="sample_address">110, StJoseph Chruch, Richards, road Newyork</string>
+    <string name="done">किया हुआ</string>
+    <string name="enter_coupon">एक कूपन दर्ज करें</string>
+    <string name="enter_valid_amount">0 से अधिक राशि दर्ज करें</string>
+    <string name="payment_done">भुगतान हो गया</string>
+
+    <!-- Waiting for provider -->
+    <string name="looking_for_ride">वितरण ढूँढना....</string>
+    <string name="cancel_ride">वितरण रद्द करना</string>
+    <string name="share">शेयर</string>
+    <string name="cancel_ride_alert">क्या आप वाकई डिलीवरी रद्द करना चाहते हैं?</string>
+    <string name="no_providers_found">आपके स्थान पर कोई ड्राइवर नहीं मिला, कृपया कुछ समय बाद प्रयास करें</string>
+    <string name="no_drivers_found">आपकी डिलीवरी लेने के लिए कोई ड्राइवर उपलब्ध नहीं है</string>
+    <string name="driver_busy">आपकी डिलिवरी ड्राइवर द्वारा रद्द कर दी गई थी। कृपया समर्थन के लिए हमसे संपर्क करें</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="try_later">बाद में</string>
+
+    <!--Driver Accepted-->
+    <string name="sample_name">Will Smith</string>
+    <string name="sample_service">BMW</string>
+    <string name="call_btn">कॉल</string>
+    <string name="cancel_trip">वितरण रद्द करना</string>
+    <string name="surge_pricing">चोटी के घंटों के कारण, प्रदाताओं की उपलब्धता के आधार पर शुल्क अलग-अलग होंगे</string>
+    <string name="pickup_drop">कृपया पिकअप और ड्रॉप स्थान दोनों दर्ज करें</string>
+
+    <!--Payment Fragment-->
+    <string name="payment">भुगतान</string>
+    <string name="payment_methods">भुगतान का तरीका</string>
+    <string name="payment_methods_past">भुगतान का तरीका</string>
+    <string name="add_payments">भुगतान के लिए कार्ड जोड़ें</string>
+    <string name="card_details">कार्ड का विवरण</string>
+    <string name="card_number">क्रेडिट / डेबिट कार्ड नंबर</string>
+    <string name="sample_card_no" translatable="false">XXXX - XXXX - XXXX - XXXX</string>
+    <string name="month_and_year" translatable="false">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="add">कार्ड जोड़ें</string>
+    <string name="enter_card_details">कार्ड विवरण मान्य नहीं है</string>
+    <string name="are_you_sure">क्या आप वाकई हटाना चाहते हैं?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+
+    <!--Status -->
+    <string name="arrived">चालक आपके स्थान पर पहुंचा चूका हैं </string>
+    <string name="picked_up">आप डिलीवरी पर हैं</string>
+    <string name="dropped">डिलीवरी पूरी  हो गयी  है</string>
+
+    <!--Your Trips-->
+    <string name="history">इतिहास</string>
+    <string name="comments">टिप्पणियाँ</string>
+    <string name="otp">Otp</string>
+    <string name="no_trips">आपके पास कोई पिछली यात्रा नहीं है</string>
+    <string name="no_upcoming_trips">आपके पास कोई आगामी यात्रा नहीं है</string>
+    <string name="your_trips">आपकी डिलीवरी </string>
+    <string name="upcoming">आने वाले </string>
+    <string name="past">पिछला</string>
+
+    <!--Invoice -->
+    <string name="invoice">बीजक</string>
+    <string name="base_price">बुनियादी भाड़ा</string>
+    <string name="booking_id">बुकिंग आईडी</string>
+    <string name="sample_base_price" translatable="false">0</string>
+    <string name="sample_distance" translatable="false">1 KM</string>
+    <string name="sample_time_travel" translatable="false">1 hr</string>
+    <string name="extra_price">अतिरिक्त</string>
+    <string name="tax">कर</string>
+    <string name="wallet_detection">वॉलेट डिटेक्शन</string>
+    <string name="discount_detection">छूट लागू</string>
+    <string name="total">संपूर्ण</string>
+    <string name="pay_now">अब भुगतान करें</string>
+    <string name="distance_price">दूरी किराया</string>
+
+
+    <!--Rate provider-->
+    <string name="rate_provider">अपनी डिलीवरी के साथ रेट करें</string>
+    <string name="write_your_comment">अपनी टिप्पणी लिखें</string>
+    <string name="submit">जमा करें</string>
+
+
+    <!-- Source and destination-->
+    <string name="source_location">स्रोत स्थान</string>
+    <string name="destination_location">जहां?</string>
+
+    <!--Show Dailog-->
+    <string name="connect_to_network">नेटवर्क से कनेक्ट करें या छोड़ें</string>
+    <string name="change_pwd_dialog">आपका पासवर्ड सफलतापूर्वक अपडेट हो गया है। कृपया अपने नए पासवर्ड से लॉगिन करें।</string>
+    <string name="cencel_request">क्या आप वाकई डिलीवरी रद्द करना चाहते हैं?</string>
+    <string name="connect_to_wifi">वाईफ़ाई से कनेक्ट करें</string>
+    <string name="quit">छोड़ना</string>
+
+    <!-- Error Messages-->
+    <string name="something_went_wrong">कुछ गलत हो गया</string>
+    <string name="something_went_wrong_net">कुछ गलत हो गया है, कृपया इंटरनेट कनेक्शन की जांच करें</string>
+    <string name="oops_connect_your_internet">ओह! अपने इंटरनेट से कनेक्ट करें</string>
+    <string name="server_down">सर्वर तक पहुंचने में असमर्थ</string>
+    <string name="please_try_again">कृपया पुन: प्रयास करें</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें...</string>
+    <string name="email_validation">अपना ईमेल आईडी दर्ज करें</string>
+    <string name="not_valid_email">वैध ईमेल आईडी नहीं है</string>
+    <string name="password_validation">पासवर्ड खाली नहीं छोड़ा जा सका</string>
+    <string name="first_name_empty">पहले नाम की आवश्यकता हैं</string>
+    <string name="last_name_empty">अखिरी नाम की आवश्यकता हैं </string>
+    <string name="mobile_number_empty">मोबाइल नंबर की आवश्यकता है</string>
+    <string name="mobile_number_validation">मोबाइल नंबर में 10 से 20 अंकों के बीच संख्या होनी चाहिए</string>
+    <string name="your_cards">आपके कार्ड</string>
+    <string name="enter_details_register">पंजीकरण के लिए अपना विवरण दर्ज करें</string>
+    <string name="fb_cancel">फेसबुक लॉगिन रद्द कर दिया गया</string>
+    <string name="fb_error">फेसबुक लॉगिन विफल</string>
+    <string name="google_login">Google लॉगिन विफल</string>
+    <string name="social_cancel">सामाजिक लॉगिन रद्द कर दिया गया</string>
+    <string name="registration_failed">पंजीकरण रद्द कर दिया गया</string>
+
+    <!--True or False -->
+    <string name="True" translatable="false">true</string>
+    <string name="False" translatable="false">false</string>
+
+    <string name="add_money_using">पैसे का उपयोग कर जोड़ें</string>
+    <string name="add_money">पैसे जोड़ें</string>
+
+    <!--Coupon Activity-->
+    <string name="not_vaild_coupon">कूपन मान्य नहीं है या समाप्त हो सकता है</string>
+    <string name="coupon_added">कूपन सफलतापूर्वक लागू किया गया</string>
+    <string name="add_coupon_txt">कूपन जोड़ें</string>
+    <string name="added_coupon">कूपन आपके द्वारा लागू किया गया है</string>
+    <string name="already_in_use_coupon">कूपन पहले से ही आपके द्वारा उपयोग किया जाता है</string>
+    <string name="expired_coupon">क्षमा करें, कूपन की समय सीमा समाप्त हो गई है</string>
+    <string name="off">बंद</string>
+    <string name="the_applied_coupon">कूपन कोड लागू है</string>
+    <string name="valid_until">तब तक वैध</string>
+    <string name="enter_the_code">कूपन कोड दर्ज करें</string>
+
+    <!--Wallet Activity-->
+    <string name="wallet_balance">आपका वॉलेट राशि है</string>
+
+
+    <!--Change Password-->
+    <string name="change_password_title">पासवर्ड बदलें</string>
+    <string name="current_password">वर्तमान पासवर्ड</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="confirm_password">नए पासवर्ड की पुष्टि करें</string>
+    <string name="please_enter_current_pass">कृपया वर्तमान पासवर्ड दर्ज करें</string>
+    <string name="please_enter_new_pass">कृपया नया पासवर्ड दर्ज करें</string>
+    <string name="please_enter_confirm_pass">कृपया पुष्टि पासवर्ड दर्ज करें</string>
+    <string name="different_passwords">पासवर्ड मेल नहीं खाता है</string>
+    <string name="commision">सेवा शुल्क</string>
+    <string name="discount">छूट</string>
+    <string name="request_cancel">आपने अनुरोध रद्द कर दिया है</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">हैलो रिक्त टुकड़ा</string>
+    <string name="valid_image">कोई छवि नहीं मिली</string>
+    <string name="otp_validation">ओटीपी फ़ील्ड दर्ज करें आवश्यक है</string>
+    <string name="inncorrect_otp">गलत ओटीपी</string>
+    <string name="confirm_password_validation">पासवर्ड का मेल नहीं हुआ</string>
+    <string name="reset_password">पासवर्ड रीसेट</string>
+    <string name="note">नोट: कृपया अपने पंजीकृत ईमेल पते पर ओटीपी भेजें दर्ज करें</string>
+    <string name="secrete_code">ओटीपी दर्ज करें</string>
+    <string name="connect_with_social_media">सामाजिक से जुड़ें</string>
+    <string name="logout_alert">क्या आप निश्चित रूप से लॉगआउट करना चाहते हैं?</string>
+    <string name="distance_travelled">यात्रा की दूरी</string>
+    <string name="time_taken">लिया गया समय</string>
+    <string name="extend_trip_alert">क्या आप चयनित स्थान के साथ यात्रा का विस्तार करना चाहते हैं?</string>
+    <string name="choose_social">एक खाता चुनें</string>
+    <string name="facebook_name">फेसबुक</string>
+    <string name="google_name">Google</string>
+    <string name="schdule_accept">आपके अनुरोध का ड्राइवर द्वारा जवाब दिया है</string>
+    <string name="no_comments">कोई टिप्पणी उपलब्ध नहीं है</string>
+    <string name="pin_location">पिन स्थान सेट करें</string>
+    <string name="english">English</string>
+    <string name="arabic">عربى</string>
+    <string name="referral_code">रेफरल कोड</string>
+    <string name="enter_pick_loc" translatable="false">पिकअप स्थान दर्ज करें</string>
+    <string name="enter_drop_loc" translatable="false">ड्रॉप स्थान दर्ज करें</string>
+    <string name="hindi">हिंदी</string>
+    <string name="home_location">होम</string>
+    <string name="delete">हटाना</string>
+    <string name="favorites">पसंदीदा</string>
+    <string name="language">भाषा बदलना </string>
+    <string name="add_home_location">घर जोड़ें</string>
+    <string name="work_location">काम</string>
+    <string name="add_work_location">कार्य जोड़ें</string>
+    <string name="save_location">सहेजे गए स्थान</string>
+    <string name="type">मॉडल</string>
+    <string name="emaergeny_call">क्या आप निश्चित रूप से आपातकालीन कॉल के साथ आगे बढ़ना चाहते हैं?</string>
+    <string name="user_no_mobile">कोई मोबाइल नंबर नहीं</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="reason_to_cancel">रद्द करने का कारण</string>
+    <string name="reason">एक संदेश छोड़ो</string>
+
+    <!--Activity Help-->
+    <string name="help_msg">हमारी टीम व्यक्ति आपसे जल्द ही संपर्क करेगी</string>
+    <string name="help_title">DOT2DOTZ सहायता</string>
+    <string name="schedule_request">बाद में बुक करें</string>
+    <string name="surge_pricing_title">उच्च मांग मूल्य के कारण भिन्न हो सकता है</string>
+    <string name="request_now">अभी बुक करें</string>
+    <string name="help">सहायता</string>
+    <string name="book_name">बुकिंग आईडी</string>
+    <string name="password_size">पासवर्ड का आकार कम से कम 6 होना चाहिए</string>
+    <string name="sorry_for_inconvinent">असुविधाजनक के लिए खेद है, हमारे सहायक अभी व्यस्त हैं</string>
+    <string name="email_exist">Tईमेल पहले ही ली जा चुकी है</string>
+    <string name="first_name_no_number">पहला नाम संख्या स्वीकार नहीं करता है</string>
+    <string name="last_name_no_number">Lअंतिम नाम संख्या स्वीकार नहीं करता हैं</string>
+    <string name="ok">ओके</string>
+    <string name="use_wallet_amount">वॉलेट राशि का प्रयोग करें</string>
+    <string name="arriving">ड्राइवर ने आपका अनुरोध स्वीकार कर लिया।</string>
+    <string name="view_invoice">रसीद देखें</string>
+    <string name="payment_set_as_card">भुगतान मोड कार्ड में बदल गया</string>
+    <string name="payment_set_as_cash">भुगतान मोड नकद में बदल गया</string>
+    <string name="walletHistory">वॉलेट इतिहास</string>
+    <string name="couponHistory">कूपन इतिहास</string>
+    <string name="passbook">पासबुक</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="no_wallet_history">कोई वॉलेट इतिहास उपलब्ध नहीं है!</string>
+    <string name="no_coupon_history">कोई कूपन इतिहास उपलब्ध नहीं है!</string>
+    <string name="new_version_available">नया संस्करण उपलब्ध है</string>
+    <string name="update_to_continue">कृपया, नए संस्करण में ऐप अपडेट करें।</string>
+    <string name="update">संस्करण करें</string>
+    <string name="no_thanks">जी नहीं, धन्यवाद</string>
+    <string name="new_password_validation">नया पासवर्ड पुराने पासवर्ड के समान नहीं होना चाहिए।</string>
+    <string name="password_validation1">पासवर्ड में न्यूनतम 6 वर्ण, अधिकतम 16 वर्ण होने चाहिए</string>
+    <string name="password_validation2">पासवर्ड में कम से कम 1 अपरकेस, 1 लोअरकेस, 1 नंबर और 1 विशेष कैरेक्टर होना चाहिए</string>
+    <string name="add_amount">राशि जोड़ें</string>
+    <string name="enter_the_amount">राशि दर्ज करें</string>
+    <string name="amount_alert">कृपया राशि दर्ज करें</string>
+    <string name="add_money_to_wallet">वॉलेट में पैसा जोड़ें</string>
+    <string name="version">संस्करण</string>
+    <string name="source_dest_not_same">स्रोत और गंतव्य पता समान नहीं होना चाहिए!</string>
+    <string name="language_update">भाषा अपडेट कर रहा है ... कृपया प्रतीक्षा करें</string>
+
+    <!--Activity Begin-->
+    <string name="get_moving_with_moovr">Dot2Dotz सेवाओं के साथ आगे बढ़ें</string>
+    <string name="enter_your_mail_id">अपनी एक्सेस कुंजी दर्ज करें</string>
+    <string name="enter_your_user_name">अपने उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="or_connect_with_social_media">या सामाजिक से जुड़ें</string>
+    <string name="enter_username" translatable="false">अपने उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="enter_access_key">कृपया अपनी एक्सेस कुंजी दर्ज करें</string>
+    <string name="enter_loc" translatable="false">स्थान दर्ज करें</string>
+    <string name="locations" translatable="false">स्थानों</string>
+    <string name="what_are_moving_for_u" translatable="false">हम आपके लिए क्या चल रहे हैं?</string>
+    <string name="can_not_add_loc" translatable="false">3 से अधिक स्थानों को जोड़ नहीं सकते हैं</string>
+    <string name="drop_location" translatable="false">ड्रॉप स्थान</string>
+    <string name="pickup_loc" translatable="false">पिक करने की जगह</string>
+    <string name="enter_your_goods" translatable="false">अपने सामान दर्ज करें</string>
+    <string name="enter_your_name" translatable="false">अपना नाम दर्ज करें</string>
+    <string name="enter_receiver_name" translatable="false">रिसीवर का नाम दर्ज करें</string>
+    <string name="enter_receiver_mobile" translatable="false">रिसीवर का मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_receiver_mobile_validation" translatable="false">मोबाइल नंबर 10 अंक होना चाहिए</string>
+    <string name="enter_your_mobile" translatable="false">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="src_and_dest_same_loc" translatable="false">स्रोत और गंतव्य दोनों स्थान समान नहीं हो सकते हैं</string>
+    <string name="cancel" translatable="false">रद्द करना</string>
+
+    <string name="do_not_have_account" translatable="false">खाता नहीं है?</string>
+    <string name="sign_up" translatable="false">साइन अप करें</string>
+    <string name="here" translatable="false">यहाँ</string>
+    <string name="select_service_type" translatable="false">सेवा प्रकार का चयन करें</string>
+    <string name="normal_user" translatable="false">सामान्य उपयोगकर्ता</string>
+    <string name="business_user" translatable="false">व्यापार उपयोगकर्ता</string>
+    <string name="select_type" translatable="false">प्रकार चुनें</string>
+    <string name="track_order" translatable="false">ऑर्डर पर नज़र रखें</string>
+    <string name="order" translatable="false">ऑर्डर</string>
+    <string name="trip" translatable="false">यात्रा </string>
+    <string name="delivery_address" translatable="false">डिलिवरी का पता</string>
+    <string name="status" translatable="false">स्थिति</string>
+    <string name="empty_goods" translatable="false">सामान की आवश्यकता है</string>
+    <string name="empty_user_name" translatable="false">नाम  जरूरी है</string>
+    <string name="empty_user_mobile" translatable="false">मोबाइल नंबर जरूरी है</string>
+    <string name="empty_dest" translatable="false">गंतव्य पता आवश्यक है</string>
+    <string name="user_type" translatable="false">उपयोगकर्ता का प्रकार</string>
+    <string name="yet_pickup" translatable="false">पिक करने के लिए अभी आदेश</string>
+    <string name="pickup" translatable="false">आदेश उठाया गया</string>
+    <string name="order_delivered" translatable="false">आदेश वितरित</string>
+    <string name="no_of_trips" translatable="false">यात्रा की संख्या:</string>
+    <string name="register_cancel" translatable="false">पंजीकरण रद्द</string>
+    <string name="alert" translatable="false">क्या आप वाकई इस स्थान को हटाना चाहते हैं?</string>
+    <string name="give_your_feedback">कृपया रद्द करने का कारण चुनें</string>
+    <string name="no_driver">कोई प्रदाता उपलब्ध नहीं है</string>
+    <string name="waiting_fare">प्रतीक्षा शुल्क</string>
+    <string name="mins">मिनट</string>
+
+</resources>

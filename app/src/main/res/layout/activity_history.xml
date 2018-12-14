@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dot2dotz.app.Activities.HistoryActivity">
+
+    <LinearLayout
+        android:id="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/content_height_width"
+            android:layout_height="@dimen/content_height_width"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_5dp"
+            android:tint="@color/text_color_white"
+            android:src="@drawable/back_drawable" />
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/history"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/lnrTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/light_light_gray"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/colorPrimary" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

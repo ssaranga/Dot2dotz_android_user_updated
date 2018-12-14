@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    tools:context=".Activities.BeginScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnrAccessLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:background="@drawable/banner"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/box_shadow"
+                    android:visibility="gone" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:orientation="vertical">
+
+                <com.dot2dotz.app.Utils.MyTextView
+                    android:id="@+id/myTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/get_moving_with_moovr"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:id="@+id/lnrBegin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/line_devider_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_dummy_user"
+                            android:tint="@color/colorPrimaryDark" />
+
+                        <com.dot2dotz.app.Utils.MyEditText
+                            android:id="@+id/txtUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/dimen_8dp"
+                            android:background="@drawable/edittext_bg"
+                            android:gravity="center|start"
+                            android:hint="@string/enter_your_user_name"
+                            android:inputType="none"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textColor="@color/com_facebook_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@android:drawable/ic_lock_idle_lock"
+                            android:tint="@color/colorPrimaryDark" />
+
+                        <com.dot2dotz.app.Utils.MyEditText
+                            android:id="@+id/txtAccessKey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/dimen_8dp"
+                            android:background="@drawable/edittext_bg"
+                            android:gravity="center|start"
+                            android:hint="@string/enter_your_mail_id"
+                            android:inputType="none"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:textColor="@color/com_facebook_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_devider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btnAccessKey"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/ic_arrow_right" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrAccessLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent_black"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="waiting_for_approval.json"
+                    app:lottie_loop="true" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

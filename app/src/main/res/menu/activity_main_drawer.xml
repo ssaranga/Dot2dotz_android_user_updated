@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_payment"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_payment" />
+        <item
+            android:id="@+id/nav_yourtrips"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_trips" />
+        <item
+            android:id="@+id/nav_coupon"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_coupon" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_wallet" />
+        <item
+            android:id="@+id/passbook"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/passbook"
+            android:visible="false" />
+        <item
+            android:id="@+id/settings"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/settings"
+            android:visible="true" />
+        <item
+            android:id="@+id/label_language"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/settings"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_help"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_help" />
+        <item
+            android:id="@+id/nav_share"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_share" />
+        <item
+            android:id="@+id/nav_logout"
+            android:actionMenuTextColor="@color/colorAccent"
+            android:title="@string/action_logout" />
+    </group>
+</menu>

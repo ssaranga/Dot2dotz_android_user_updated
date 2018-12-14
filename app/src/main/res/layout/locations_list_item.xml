@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@android:color/white"
+    android:elevation="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/close"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/src_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_img"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/round" />
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@color/black_text_color" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/box" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_img"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/src_img_layout"
+            android:layout_toRightOf="@+id/src_img_layout"
+            android:orientation="vertical">
+
+            <com.dot2dotz.app.Utils.MyTextView
+                android:id="@+id/src_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_stroke"
+                android:hint="@string/pickup_loc"
+                android:lines="1"
+                android:padding="@dimen/_7sdp" />
+
+            <com.dot2dotz.app.Utils.MyTextView
+                android:id="@+id/dest_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/border_stroke"
+                android:hint="@string/drop_location"
+                android:lines="1"
+                android:padding="@dimen/_7sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src_img_layout"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <com.dot2dotz.app.Utils.MyTextView
+                android:id="@+id/good_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/border_stroke"
+                android:gravity="start"
+                android:hint="@string/enter_your_goods"
+                android:lines="3"
+                android:padding="@dimen/_3sdp" />
+
+            <com.dot2dotz.app.Utils.MyTextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/border_stroke"
+                android:gravity="start"
+                android:hint="@string/enter_receiver_name"
+                android:lines="1"
+                android:padding="@dimen/_3sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp">
+
+                <ImageView
+                    android:id="@+id/userMobile_pick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="start"
+                    android:lines="1"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/img_add_contact" />
+
+                <com.dot2dotz.app.Utils.MyTextView
+                    android:id="@+id/userMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_toRightOf="@+id/userMobile_pick"
+                    android:background="@drawable/border_stroke"
+                    android:gravity="start"
+                    android:hint="@string/enter_receiver_mobile"
+                    android:lines="1"
+                    android:padding="@dimen/_3sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

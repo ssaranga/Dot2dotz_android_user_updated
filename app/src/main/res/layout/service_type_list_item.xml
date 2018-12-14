@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutOfList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingEnd="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/serviceImg"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"/>
+
+    <FrameLayout
+        android:id="@+id/selector_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/dimen_10dp"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingTop="@dimen/dimen_5dp">
+
+        <com.dot2dotz.app.Utils.MyTextView
+            android:id="@+id/serviceItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <com.dot2dotz.app.Utils.MyTextView
+        android:id="@+id/serviceItemDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        tools:text="750kg payload,7*4*5(l*b*h)"
+        android:textSize="10sp" />
+</LinearLayout>

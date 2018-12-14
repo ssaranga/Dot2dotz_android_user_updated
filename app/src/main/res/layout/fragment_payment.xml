@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/text_color_black"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/content_height_width"
+            android:layout_height="@dimen/content_height_width"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@drawable/back_drawable"
+            android:tint="@color/text_color_white" />
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/payment"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layoutDirection="locale"
+        android:orientation="vertical">
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_methods"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <RelativeLayout
+            android:id="@+id/cash_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layoutDirection="locale">
+
+            <RadioButton
+                android:id="@+id/rb_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/cash"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/rb_cash"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/dimen_5dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/money_icon" />
+
+            <com.dot2dotz.app.Utils.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_toEndOf="@+id/cash"
+                android:gravity="center_vertical"
+                android:text="@string/selected_payment_mode"
+                android:textColor="@color/black_text_color"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <ImageView
+                android:id="@+id/tick_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_tick"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lnrPayUMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_payu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/iv_payu"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/rb_payu"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/dimen_5dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/pay_u_money" />
+
+            <com.dot2dotz.app.Utils.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_payu"
+                android:gravity="center_vertical"
+                android:text="@string/selected_payment_mode_payu"
+                android:textColor="@color/black_text_color"
+                android:textSize="@dimen/text_size_16sp" />
+
+        </RelativeLayout>
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/add_money"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/text_size_18sp"
+            android:visibility="gone" />
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="(empty)"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/payment_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layoutDirection="locale"
+            android:visibility="gone" />
+
+        <com.dot2dotz.app.Utils.MyBoldTextView
+            android:id="@+id/addCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/add_payments"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
