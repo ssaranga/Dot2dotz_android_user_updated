@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Dot2Dotz</string>
-    <string name="sample_mail_id" translatable="false">नाम@examplecom</string>
+    <string name="sample_mail_id" translatable="false">name@example.com</string>
     <string name="action_settings">सेटिंग्स</string>
     <string name="label_language">भाषा</string>
 

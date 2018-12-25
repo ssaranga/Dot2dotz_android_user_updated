@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.xuber.app", appContext.getPackageName());
+        assertEquals("com.dot2dotz.app", appContext.getPackageName());
     }
 }

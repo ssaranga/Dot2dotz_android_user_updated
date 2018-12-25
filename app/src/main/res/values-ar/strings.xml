@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY appName "العبور"><!ENTITY Provider "سائق"><!ENTITY provider "سائق"><!ENTITY Service "اركب"><!ENTITY service "اركب">]>
 <resources>
     <string name="label_dummy">Dot2Dotz</string>
-    <string name="sample_mail_id">اسم@examplecom</string>
+    <string name="sample_mail_id">اسم@example.com</string>
 
     <string name="WEB_CLIENT_KEY">91672578681-krdjn3t7qh3c73skqp6d7ide8ba56dec.apps.googleusercontent.com</string>
     <string name="Outh_Client">"91672578681-flrvu48ulb7tlicov0m7l7e30vf73rtu.apps.googleusercontent.com</string>

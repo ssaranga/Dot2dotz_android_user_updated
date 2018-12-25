@@ -37,9 +37,8 @@ import retrofit2.Callback;
 
 public class ActivitySettings extends AppCompatActivity {
 
-    private RadioButton radioEnglish, radioArabic, radioHindi;
-
-    private LinearLayout lnrEnglish, lnrArabic, lnrHindi, lnrHome, lnrWork;
+    private RadioButton radioEnglish, radioHindi,radioArabic,radioUrdu, radioPunjabi;
+    private LinearLayout lnrEnglish, lnrHindi,lnrArabic,lnrUrdu, lnrPunjabi;
 
     private int UPDATE_HOME_WORK = 1;
 
@@ -62,19 +61,21 @@ public class ActivitySettings extends AppCompatActivity {
     private void init() {
 
         radioEnglish = findViewById(R.id.radioEnglish);
-        radioArabic = findViewById(R.id.radioArabic);
         radioHindi = findViewById(R.id.radioHindi);
+        radioArabic = findViewById(R.id.radioArabic);
+        radioUrdu = findViewById(R.id.radioUrdu);
+        radioPunjabi = findViewById(R.id.radioPunjabi);
+
+
 
         lnrEnglish = findViewById(R.id.lnrEnglish);
         lnrHindi = findViewById(R.id.lnrHindi);
-        lnrArabic = findViewById(R.id.lnrArabic);
-        lnrHome = findViewById(R.id.lnrHome);
-        lnrWork = findViewById(R.id.lnrWork);
+        lnrUrdu = findViewById(R.id.lnrUrdu);
+        lnrPunjabi = findViewById(R.id.lnrPunjabi);
 
-        txtHomeLocation = findViewById(R.id.txtHomeLocation);
-        txtWorkLocation = findViewById(R.id.txtWorkLocation);
-        txtDeleteWork = findViewById(R.id.txtDeleteWork);
-        txtDeleteHome = findViewById(R.id.txtDeleteHome);
+
+
+        lnrArabic = findViewById(R.id.lnrArabic);
 
         backArrow = findViewById(R.id.backArrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
@@ -84,52 +85,28 @@ public class ActivitySettings extends AppCompatActivity {
             }
         });
 
-        customDialog = new CustomDialog(ActivitySettings.this);
+        /*customDialog = new CustomDialog(ActivitySettings.this);
         customDialog.setCancelable(false);
-        customDialog.show();
-
-        getFavoriteLocations();
-
-        lnrHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (SharedHelper.getKey(ActivitySettings.this, "home").equalsIgnoreCase("")) {
-                    gotoHomeWork("home");
-                }
-            }
-        });
-
-        lnrWork.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (SharedHelper.getKey(ActivitySettings.this, "work").equalsIgnoreCase("")) {
-                    gotoHomeWork("work");
-                }
-            }
-        });
-
-        txtDeleteHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                deleteFavoriteLocations("home");
-            }
-        });
-
-        txtDeleteWork.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                deleteFavoriteLocations("work");
-            }
-        });
-
+        customDialog.show();*/
 
         if (SharedHelper.getKey(ActivitySettings.this, "language").equalsIgnoreCase("en")) {
             radioEnglish.setChecked(true);
-        } else if (SharedHelper.getKey(ActivitySettings.this, "language").equalsIgnoreCase("ar")) {
-            radioArabic.setChecked(true);
         } else if (SharedHelper.getKey(ActivitySettings.this, "language").equalsIgnoreCase("hi")) {
             radioHindi.setChecked(true);
-        } else {
+        }
+        else if(SharedHelper.getKey(ActivitySettings.this, "language").equalsIgnoreCase("ar"))
+        {
+            radioArabic.setChecked(true);
+        }
+        else if(SharedHelper.getKey(ActivitySettings.this, "language").equalsIgnoreCase("ur"))
+        {
+            radioUrdu.setChecked(true);
+        }
+        else if(SharedHelper.getKey(ActivitySettings.this, "language").equalsIgnoreCase("pa"))
+        {
+            radioPunjabi.setChecked(true);
+        }
+        else {
             radioEnglish.setChecked(true);
         }
 
@@ -137,17 +114,10 @@ public class ActivitySettings extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 radioEnglish.setChecked(true);
+                radioHindi.setChecked(false);
                 radioArabic.setChecked(false);
-                radioHindi.setChecked(false);
-            }
-        });
-
-        lnrArabic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                radioEnglish.setChecked(false);
-                radioArabic.setChecked(true);
-                radioHindi.setChecked(false);
+                radioUrdu.setChecked(false);
+                radioPunjabi.setChecked(false);
             }
         });
 
@@ -157,16 +127,81 @@ public class ActivitySettings extends AppCompatActivity {
                 radioEnglish.setChecked(false);
                 radioArabic.setChecked(false);
                 radioHindi.setChecked(true);
+                radioUrdu.setChecked(false);
+                radioPunjabi.setChecked(false);
             }
         });
+
+        lnrArabic.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                radioEnglish.setChecked(false);
+                radioArabic.setChecked(true);
+                radioHindi.setChecked(false);
+                radioUrdu.setChecked(false);
+                radioPunjabi.setChecked(false);
+            }
+        });
+
+        lnrUrdu.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                radioEnglish.setChecked(false);
+                radioUrdu.setChecked(true);
+                radioArabic.setChecked(false);
+                radioHindi.setChecked(false);
+                radioPunjabi.setChecked(false);
+            }
+        });
+
+        lnrPunjabi.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                radioEnglish.setChecked(false);
+                radioUrdu.setChecked(false);
+                radioArabic.setChecked(false);
+                radioHindi.setChecked(false);
+                radioPunjabi.setChecked(true);
+            }
+        });
+
+
 
         radioEnglish.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if (isChecked) {
-                    radioArabic.setChecked(false);
+                if(isChecked)
+                {
                     radioHindi.setChecked(false);
+                    radioArabic.setChecked(false);
+                    radioEnglish.setChecked(true);
+                    radioPunjabi.setChecked(false);
                     SharedHelper.putKey(ActivitySettings.this, "language", "en");
+
+                    setLanguage();
+//                    recreate();
+                    GoToMainActivity();
+                }
+            }
+        });
+
+
+        radioHindi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if (isChecked)
+                {
+                    radioHindi.setChecked(true);
+                    radioArabic.setChecked(false);
+                    radioEnglish.setChecked(false);
+                    radioUrdu.setChecked(false);
+
+                    radioPunjabi.setChecked(false);
+                    SharedHelper.putKey(ActivitySettings.this, "language", "hi");
+
                     setLanguage();
 //                    recreate();
                     GoToMainActivity();
@@ -175,34 +210,65 @@ public class ActivitySettings extends AppCompatActivity {
         });
 
         radioArabic.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked)
+            {
                 if (isChecked) {
                     radioEnglish.setChecked(false);
                     radioHindi.setChecked(false);
+                    radioArabic.setChecked(true);
+                    radioUrdu.setChecked(false);
+
+                    radioPunjabi.setChecked(false);
                     SharedHelper.putKey(ActivitySettings.this, "language", "ar");
                     setLanguage();
-//                    recreate();
                     GoToMainActivity();
                 }
             }
         });
 
-        radioHindi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+        radioUrdu.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if (isChecked) {
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked)
+            {
+                if (isChecked)
+                {
                     radioEnglish.setChecked(false);
+                    radioHindi.setChecked(false);
                     radioArabic.setChecked(false);
-                    SharedHelper.putKey(ActivitySettings.this, "language", "hi");
+                    radioUrdu.setChecked(true);
+
+                    radioPunjabi.setChecked(false);
+                    SharedHelper.putKey(ActivitySettings.this, "language", "ur");
                     setLanguage();
-//                    recreate();
+                    GoToMainActivity();
+                }
+            }
+        });
+
+        radioPunjabi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked)
+            {
+                if (isChecked)
+                {
+                    radioEnglish.setChecked(false);
+                    radioHindi.setChecked(false);
+                    radioArabic.setChecked(false);
+                    radioUrdu.setChecked(false);
+
+                    radioPunjabi.setChecked(true);
+                    SharedHelper.putKey(ActivitySettings.this, "language", "pa");
+                    setLanguage();
                     GoToMainActivity();
                 }
             }
         });
     }
-
     public void GoToMainActivity() {
         customDialogNew = new CustomDialog(ActivitySettings.this, getResources().getString(R.string.language_update));
         if (customDialogNew != null)

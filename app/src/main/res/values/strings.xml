@@ -412,6 +412,8 @@
     <string name="give_your_feedback">Please select the reason for canceling</string>
     <string name="no_driver">No provider available</string>
     <string name="waiting_fare">Waiting Charge</string>
+    <string name="punjabi">Punjabi</string>
+    <string name="urdu">Urdu</string>
 
 
 </resources>
