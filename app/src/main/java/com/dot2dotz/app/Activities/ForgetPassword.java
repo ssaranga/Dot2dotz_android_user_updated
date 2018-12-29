@@ -299,7 +299,7 @@ public class ForgetPassword extends AppCompatActivity {
 
                     JSONObject object1 = new JSONObject(response.toString());
                     Toast.makeText(context, object1.optString("message"), Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(ForgetPassword.this, ActivityEmail.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    startActivity(new Intent(ForgetPassword.this, ActivityMobile.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                     finish();
                 } catch (JSONException e) {
                     e.printStackTrace();

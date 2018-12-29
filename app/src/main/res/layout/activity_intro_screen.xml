@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context="com.dot2dotz.app.Activities.WelcomeScreenActivity">
+    tools:context="com.dot2dotz.app.Activities.IntroActivity">
 
     <RelativeLayout
         android:background="@color/background_color"
@@ -66,10 +66,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
+            android:background="@drawable/button_background"
+
             android:layout_marginRight="15dp"
             android:layout_marginTop="1dp"
             android:layout_weight="1"
-            android:background="@color/colorAccent"
+            style="?android:attr/buttonBarButtonStyle"
+
             android:text="@string/sign_in"
             android:textColor="@color/colorTextWhite" />
 
@@ -81,8 +84,8 @@
             android:layout_marginRight="15dp"
             android:layout_marginTop="1dp"
             android:layout_weight="1"
+            android:background="@drawable/button_background"
             android:textColor="@color/colorTextWhite"
-            android:background="@color/colorPrimary"
             android:text="@string/signup" />
 
 
@@ -96,7 +99,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.dot2dotz.app.Utils.MyTextView
+       <!-- <com.dot2dotz.app.Utils.MyTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_10sdp"
@@ -105,7 +108,7 @@
             android:text="@string/or_connect_with_social_media"
             android:textColor="@color/wallet_holo_blue_light"
             android:textSize="@dimen/_14sdp"
-            android:visibility="visible" />
+            android:visibility="visible" />-->
 
     </LinearLayout>
 

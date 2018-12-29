@@ -1,7 +1,6 @@
 package com.dot2dotz.app.Activities;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
@@ -24,7 +23,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class ActivityEmail extends AppCompatActivity {
+public class ActivityMobile extends AppCompatActivity {
 
     ImageView backArrow;
     FloatingActionButton nextICON;
@@ -35,13 +34,13 @@ public class ActivityEmail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_email);
-        CommonUtils.setLanguage(ActivityEmail.this);
+        setContentView(R.layout.activity_mobile);
+        CommonUtils.setLanguage(ActivityMobile.this);
 
-        if (Build.VERSION.SDK_INT > 15) {
+
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
-        }
+
 
         email = findViewById(R.id.enter_ur_mailID);
         nextICON = findViewById(R.id.nextICON);
@@ -63,9 +62,9 @@ public class ActivityEmail extends AppCompatActivity {
                     /*if ((!isValidEmail(email.getText().toString()))) {
                         displayMessage(getString(R.string.email_validation));
                     } else {*/
-                        Utilities.hideKeyboard(ActivityEmail.this);
-                        SharedHelper.putKey(ActivityEmail.this, "email", email.getText().toString());
-                        Intent mainIntent = new Intent(ActivityEmail.this, ActivityPassword.class);
+                        Utilities.hideKeyboard(ActivityMobile.this);
+                        SharedHelper.putKey(ActivityMobile.this, "email", email.getText().toString());
+                        Intent mainIntent = new Intent(ActivityMobile.this, ActivityPassword.class);
                         startActivity(mainIntent);
                         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         /* }*/
@@ -86,9 +85,9 @@ public class ActivityEmail extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedHelper.putKey(ActivityEmail.this, "password", "");
-                Utilities.hideKeyboard(ActivityEmail.this);
-                Intent mainIntent = new Intent(ActivityEmail.this, RegisterActivity.class);
+                SharedHelper.putKey(ActivityMobile.this, "password", "");
+                Utilities.hideKeyboard(ActivityMobile.this);
+                Intent mainIntent = new Intent(ActivityMobile.this, RegisterActivity.class);
                 mainIntent.putExtra("isFromMailActivity", true);
                 startActivity(mainIntent);
                 overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
@@ -98,9 +97,9 @@ public class ActivityEmail extends AppCompatActivity {
         forgetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedHelper.putKey(ActivityEmail.this, "password", "");
-                Utilities.hideKeyboard(ActivityEmail.this);
-                Intent mainIntent = new Intent(ActivityEmail.this, ForgetPassword.class);
+                SharedHelper.putKey(ActivityMobile.this, "password", "");
+                Utilities.hideKeyboard(ActivityMobile.this);
+                Intent mainIntent = new Intent(ActivityMobile.this, ForgetPassword.class);
                 mainIntent.putExtra("isFromMailActivity", true);
                 startActivity(mainIntent);
             }

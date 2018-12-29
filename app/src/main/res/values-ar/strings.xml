@@ -279,4 +279,7 @@
     <string name="enter_your_user_name">Enter your Username</string>
     <string name="enter_access_key">Please enter your access key</string>
     <string name="waiting_fare">Waiting Charge</string>
+    <string name="punjabi">Punjabi</string>
+    <string name="urdu">Urdu</string>
+
 </resources>

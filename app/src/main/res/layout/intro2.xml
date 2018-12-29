@@ -6,16 +6,16 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_marginTop="@dimen/_70sdp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_120sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:src="@drawable/drive_sample" />
+            android:layout_height="233dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/schedule_sample" />
 
 
         <com.dot2dotz.app.Utils.MyBoldTextView
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:gravity="center"
-            android:text="@string/bookmark"
+            android:text="@string/search"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/text_size_18sp"
@@ -35,9 +35,9 @@
             android:layout_margin="@dimen/activity_vertical_margin"
             android:gravity="center"
             android:lineSpacingMultiplier="1.2"
-            android:text="@string/bookmark_description"
+            android:text="@string/search_description"
             android:textSize="@dimen/text_size_16sp" />
-    </LinearLayout>
 
+    </LinearLayout>
 
 </LinearLayout>

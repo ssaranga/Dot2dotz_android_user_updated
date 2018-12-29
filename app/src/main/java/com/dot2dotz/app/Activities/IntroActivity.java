@@ -26,7 +26,7 @@ import com.dot2dotz.app.Utils.CommonUtils;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class WelcomeScreenActivity extends AppCompatActivity {
+public class IntroActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
@@ -44,27 +44,27 @@ public class WelcomeScreenActivity extends AppCompatActivity {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         }
 
-        setContentView(R.layout.activity_welcome_screen);
+        setContentView(R.layout.activity_intro_screen);
 
-        CommonUtils.setLanguage(WelcomeScreenActivity.this);
+        CommonUtils.setLanguage(IntroActivity.this);
 
-        viewPager = (ViewPager) findViewById(R.id.view_pager);
-        dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
-        loginButton = (Button) findViewById(R.id.sign_in_btn);
-        skipBtn = (TextView) findViewById(R.id.skip);
-        signUpButton = (Button) findViewById(R.id.sign_up_btn);
-        social_layout = (LinearLayout) findViewById(R.id.social_layout);
+        viewPager = findViewById(R.id.view_pager);
+        dotsLayout = findViewById(R.id.layoutDots);
+        loginButton = findViewById(R.id.sign_in_btn);
+        skipBtn = findViewById(R.id.skip);
+        signUpButton = findViewById(R.id.sign_up_btn);
+        social_layout = findViewById(R.id.social_layout);
         // layouts of all welcome sliders
         // add few more layouts if you want
         layouts = new int[]{
-                R.layout.welcome_slide1,
-                R.layout.welcome_slide2,
-                R.layout.welcome_slide3
+                R.layout.intro1,
+                R.layout.intro2,
+                R.layout.intro3
         };
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeScreenActivity.this, ActivityEmail.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(IntroActivity.this, ActivityMobile.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.anim_nothing);
 //                finish();
             }
@@ -72,7 +72,7 @@ public class WelcomeScreenActivity extends AppCompatActivity {
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeScreenActivity.this, RegisterActivity.class).putExtra("signup", true).putExtra("viewpager", "yes").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(IntroActivity.this, RegisterActivity.class).putExtra("signup", true).putExtra("viewpager", "yes").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.anim_nothing);
 //                finish();
             }
@@ -81,7 +81,7 @@ public class WelcomeScreenActivity extends AppCompatActivity {
         social_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeScreenActivity.this, ActivitySocialLogin.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(IntroActivity.this, ActivitySocialLogin.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.anim_nothing);
 //                finish();
             }
@@ -90,7 +90,7 @@ public class WelcomeScreenActivity extends AppCompatActivity {
 //        skipBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                startActivity(new Intent(WelcomeScreenActivity.this, HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+//                startActivity(new Intent(IntroActivity.this, HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 //                overridePendingTransition(R.anim.slide_in_right, R.anim.anim_nothing);
 //                finish();
 //

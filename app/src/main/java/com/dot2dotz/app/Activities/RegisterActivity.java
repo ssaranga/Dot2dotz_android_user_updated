@@ -510,7 +510,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void GoToBeginActivity() {
         if (customDialog != null && customDialog.isShowing())
             customDialog.dismiss();
-        Intent mainIntent = new Intent(RegisterActivity.this, ActivityEmail.class);
+        Intent mainIntent = new Intent(RegisterActivity.this, ActivityMobile.class);
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(mainIntent);
         RegisterActivity.this.finish();

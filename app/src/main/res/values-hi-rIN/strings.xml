@@ -383,5 +383,7 @@
     <string name="no_driver">कोई प्रदाता उपलब्ध नहीं है</string>
     <string name="waiting_fare">प्रतीक्षा शुल्क</string>
     <string name="mins">मिनट</string>
+    <string name="punjabi">Punjabi</string>
+    <string name="urdu">Urdu</string>
 
 </resources>

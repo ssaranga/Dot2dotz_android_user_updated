@@ -79,7 +79,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Activities.ActivityEmail"
+            android:name=".Activities.ActivityMobile"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -193,7 +193,7 @@
             android:name=".Activities.ActivityHelp"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.WelcomeScreenActivity"
+            android:name=".Activities.IntroActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data

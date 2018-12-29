@@ -27,7 +27,6 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.dot2dotz.app.Activities.SignIn;
-import com.dot2dotz.app.Activities.WelcomeScreenActivity;
 import com.dot2dotz.app.Helper.SharedHelper;
 import com.dot2dotz.app.R;
 import com.dot2dotz.app.Retrofit.ApiInterface;

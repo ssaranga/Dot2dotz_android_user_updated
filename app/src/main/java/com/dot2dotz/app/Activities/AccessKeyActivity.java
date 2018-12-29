@@ -52,11 +52,11 @@ public class AccessKeyActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        txtAccessKey = (EditText) findViewById(R.id.txtAccessKey);
-        txtUserName = (EditText) findViewById(R.id.txtUserName);
-        lnrAccessLogin = (LinearLayout) findViewById(R.id.lnrAccessLogin);
-        lnrAccessLoading = (LinearLayout) findViewById(R.id.lnrAccessLoading);
-        btnAccessKey = (FloatingActionButton) findViewById(R.id.btnAccessKey);
+        txtAccessKey = findViewById(R.id.txtAccessKey);
+        txtUserName = findViewById(R.id.txtUserName);
+        lnrAccessLogin = findViewById(R.id.lnrAccessLogin);
+        lnrAccessLoading = findViewById(R.id.lnrAccessLoading);
+        btnAccessKey = findViewById(R.id.btnAccessKey);
 
         btnAccessKey.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,7 +144,7 @@ public class AccessKeyActivity extends AppCompatActivity {
             }
         }) {
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
                 HashMap<String, String> headers = new HashMap<String, String>();
                 headers.put("X-Requested-With", "XMLHttpRequest");
                 return headers;

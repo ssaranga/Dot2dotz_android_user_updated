@@ -473,6 +473,7 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
     }
 
     public void logout() {
+        Log.e("check", "logOut method call");
         final String language_code = SharedHelper.getKey(activity, "language");
         customDialog = new CustomDialog(context);
         customDialog.setCancelable(false);
@@ -508,7 +509,9 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
                     SharedHelper.putKey(context, "login_by", "");
                     SharedHelper.clearSharedPreferences(context);
                     SharedHelper.putKey(context, "language", "hi");
-                    Intent goToLogin = new Intent(activity, SignIn.class);
+                    //Intent goToLogin = new Intent(activity, SignIn.class);
+
+                    Intent goToLogin = new Intent(activity, IntroActivity.class);
                     goToLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(goToLogin);
                     SharedHelper.putKey(MainActivity.this, "language", language_code);
@@ -650,7 +653,9 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Home
     }
 
     public void GoToBeginActivity() {
-        Intent mainIntent = new Intent(activity, SignIn.class);
+        //Intent mainIntent = new Intent(activity, SignIn.class);
+        Intent mainIntent = new Intent(activity, IntroActivity.class);
+
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(mainIntent);
         activity.finish();

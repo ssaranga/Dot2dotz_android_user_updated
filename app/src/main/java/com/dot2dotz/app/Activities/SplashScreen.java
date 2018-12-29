@@ -119,90 +119,8 @@ public class SplashScreen extends AppCompatActivity {
 
     }
 
-//    private void getAccess() {
-//        JSONObject object = new JSONObject();
-//        try {
-//
-//            object.put("grant_type", "password");
-//            object.put("client_id", URLHelper.client_id);
-//
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, URLHelper.login, object, new Response.Listener<JSONObject>() {
-//            @Override
-//            public void onResponse(JSONObject response) {
-//                if ((customDialog != null) && customDialog.isShowing())
-//                    customDialog.dismiss();
-//                utils.print("SignUpResponse", response.toString());
-//                SharedHelper.putKey(context, "access_token", response.optString("access_token"));
-//                SharedHelper.putKey(context, "refresh_token", response.optString("refresh_token"));
-//                SharedHelper.putKey(context, "token_type", response.optString("token_type"));
-//                getProfile();
-//            }
-//        }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                if ((customDialog != null) && customDialog.isShowing())
-//                    customDialog.dismiss();
-//                String json = null;
-//                String Message;
-//                NetworkResponse response = error.networkResponse;
-//                utils.print("MyTest", "" + error);
-//                utils.print("MyTestError", "" + error.networkResponse);
-//
-//                if (response != null && response.data != null) {
-//                    try {
-//                        JSONObject errorObj = new JSONObject(new String(response.data));
-//
-//                        if (response.statusCode == 400 || response.statusCode == 405 || response.statusCode == 500 || response.statusCode == 401) {
-//                            try {
-//                                displayMessage(errorObj.optString("message"));
-//                            } catch (Exception e) {
-    //e.printStackTrace();
-//                                displayMessage(getString(R.string.something_went_wrong));
-//                            }
-//                        }else if (response.statusCode == 422) {
-//                            json = trimMessage(new String(response.data));
-//                            if (json != null && !json.equalsIgnoreCase("")) {
-//                                displayMessage(json);
-//                            } else {
-//                                displayMessage(getString(R.string.please_try_again));
-//                            }
-//
-//                        } else {
-//                            displayMessage(getString(R.string.please_try_again));
-//                        }
-//
-//                    } catch (Exception e) {
-    //e.printStackTrace();
-//                        displayMessage(getString(R.string.something_went_wrong));
-//                    }
-//
-//
-//                } else {
-//                    if (error instanceof NoConnectionError) {
-//                        displayMessage(getString(R.string.oops_connect_your_internet));
-//                    } else if (error instanceof NetworkError) {
-//                        displayMessage(getString(R.string.oops_connect_your_internet));
-//                    } else if (error instanceof TimeoutError) {
-//                        signIn();
-//                    }
-//                }
-//            }
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                HashMap<String, String> headers = new HashMap<String, String>();
-//                headers.put("X-Requested-With", "XMLHttpRequest");
-//                return headers;
-//            }
-//        };
-//        MoovrApplication.getInstance().addToRequestQueue(jsonObjectRequest);
-//    }
-
-
     public void getProfile() {
+  Log.e("check","getProfile method Called");
         retryCount++;
         Log.e("GetPostAPI", "" + URLHelper.UserProfile + "?device_type=android&device_id=" + device_UDID + "&device_token=" + device_token);
         JSONObject object = new JSONObject();
@@ -244,6 +162,8 @@ public class SplashScreen extends AppCompatActivity {
                     if (retryCount < 5) {
                         getProfile();
                     } else if (retryCount >= 5) {
+
+                        Log.e("check","goToBeginActivity method Called");
                         GoToBeginActivity();
                         //GoToAccessActivity();
                     }
@@ -392,7 +312,8 @@ public class SplashScreen extends AppCompatActivity {
     }
 
     public void GoToBeginActivity() {
-        Intent mainIntent = new Intent(activity, SignIn.class);
+        //Intent mainIntent = new Intent(activity, SignIn.class);
+        Intent mainIntent = new Intent(activity, IntroActivity.class);
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(mainIntent);
         activity.finish();
@@ -456,32 +377,5 @@ public class SplashScreen extends AppCompatActivity {
         }
     }
 
-//
-//    @Override
-//    public void onUpdateNeeded(final String updateUrl) {
-//        AlertDialog dialog = new AlertDialog.Builder(this)
-//                .setTitle(getResources().getString(R.string.new_version_available))
-//                .setMessage(getResources().getString(R.string.update_to_continue))
-//                .setPositiveButton(getResources().getString(R.string.update),
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                redirectStore(updateUrl);
-//                            }
-//                        }).setNegativeButton(getResources().getString(R.string.no_thanks),
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                finish();
-//                            }
-//                        }).create();
-//        dialog.show();
-//    }
-//
-//    private void redirectStore(String updateUrl) {
-//        final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(updateUrl));
-//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//        startActivity(intent);
-//    }
 
 }
